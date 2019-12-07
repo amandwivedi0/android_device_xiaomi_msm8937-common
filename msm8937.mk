@@ -245,7 +245,9 @@ PRODUCT_PACKAGES += \
     init.qcom.usb.sh \
     init.qcom.sh \
     init.target.rc \
-    fstab.qcom
+    fstab.qcom \
+    ueventd.qcom.rc \
+    init.safailnet.rc
 
 # Keymaster
 PRODUCT_PACKAGES += \

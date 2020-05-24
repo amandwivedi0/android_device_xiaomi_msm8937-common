@@ -201,6 +201,9 @@ TARGET_USES_MKE2FS := true
 TARGET_USERIMAGES_USE_EXT4 := true
 TARGET_USERIMAGES_USE_F2FS := true
 
+# Neverallows
+SELINUX_IGNORE_NEVERALLOWS := true
+
 # Peripheral manager
 TARGET_PER_MGR_ENABLED := true
 
@@ -215,7 +218,7 @@ TARGET_PROVIDES_QTI_TELEPHONY_JAR := true
 TARGET_RECOVERY_FSTAB 		 := $(VENDOR_PATH)/rootdir/fstab.qcom
 
 # SELinux
-include device/qcom/sepolicy/sepolicy.mk
+include device/qcom/sepolicy-legacy-um/sepolicy.mk
 BOARD_SEPOLICY_DIRS += $(VENDOR_PATH)/sepolicy
 
 # Wi-Fi

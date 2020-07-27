@@ -19,6 +19,8 @@
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay
 
+DEVICE_PACKAGE_OVERLAYS += vendor/omni/overlay/CarrierConfig
+
 # Boot animation
 TARGET_SCREEN_HEIGHT := 1280
 TARGET_SCREEN_WIDTH := 720
@@ -351,9 +353,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
 	libqti_vndfwk_detect
 
-PRODUCT_BOOT_JARS += \
-    telephony-ext
-
 # Seccomp policy
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/seccomp/mediacodec-seccomp.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/mediacodec.policy \
@@ -377,8 +376,7 @@ PRODUCT_PACKAGES += \
     ims_ext_common.xml
 
 PRODUCT_BOOT_JARS += \
-    ims-ext-common_system \
-    telephony-ext
+    ims-ext-common_system
 
 PRODUCT_PACKAGES += \
     qti-telephony-hidl-wrapper \

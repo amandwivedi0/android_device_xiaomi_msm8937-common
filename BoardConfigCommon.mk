@@ -20,6 +20,7 @@ VENDOR_PATH := device/xiaomi/msm8937-common
 
 # Build
 BUILD_BROKEN_DUP_RULES := true
+BUILD_BROKEN_USES_BUILD_COPY_HEADERS := true
 
 # Kernel
 BOARD_KERNEL_BASE		:= 0x80000000

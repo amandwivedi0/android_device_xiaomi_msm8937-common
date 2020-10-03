@@ -232,6 +232,9 @@ include device/qcom/sepolicy-legacy-um/sepolicy.mk
 BOARD_SEPOLICY_DIRS += $(VENDOR_PATH)/sepolicy
 include vendor/omni/sepolicy/sepolicy.mk
 
+# Thermal
+USE_DEVICE_SPECIFIC_THERMAL := true
+
 # Wi-Fi
 BOARD_HAS_QCOM_WLAN := true
 BOARD_WLAN_DEVICE := qcwcn

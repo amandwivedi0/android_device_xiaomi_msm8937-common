@@ -29,7 +29,7 @@ BOARD_KERNEL_PAGESIZE 		:=  2048
 BOARD_MKBOOTIMG_ARGS 		:= --ramdisk_offset 0x01000000 --second_offset 0x00f00000 --tags_offset 0x00000100
 TARGET_KERNEL_SOURCE 		:= kernel/xiaomi/msm8937
 TARGET_EXFAT_DRIVER		:= sdfat
-BOARD_KERNEL_CMDLINE            += androidboot.selinux=permissive
+TARGET_KERNEL_CLANG_COMPILE := true
 
 # Architecture
 TARGET_ARCH 	    	:= arm64
@@ -201,9 +201,6 @@ BOARD_ROOT_EXTRA_SYMLINKS := \
 TARGET_USES_MKE2FS := true
 TARGET_USERIMAGES_USE_EXT4 := true
 TARGET_USERIMAGES_USE_F2FS := true
-
-# Neverallows
-SELINUX_IGNORE_NEVERALLOWS := true
 
 # Omni Target
 TARGET_QCOM_DISPLAY_VARIANT := caf-msm8996

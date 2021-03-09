@@ -337,6 +337,8 @@ vendor/lib64/hw/vendor.qti.gnss@4.0-impl.so
 vendor/lib/hw/vendor.qti.gnss@4.0-impl.so
 vendor/lib64/vendor.qti.hardware.qccsyshal@1.0.so
 vendor/lib64/libbatching.so
+vendor/lib64/libcdfw.so
+vendor/lib64/libcdfw_remote_api.so
 vendor/lib64/libdataitems.so
 vendor/lib64/libgdtap.so
 vendor/lib64/libgeofencing.so
@@ -354,6 +356,7 @@ vendor/lib64/libloc_core.so
 vendor/lib64/liblowi_client.so
 vendor/lib64/liblowi_wifihal.so
 vendor/lib64/libslimclient.so
+vendor/lib64/libloc_socket.so
 vendor/lib64/libxtadapter.so
 vendor/lib64/libqcc_file_agent.so
 vendor/lib64/libavservices_minijail.so

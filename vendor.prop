@@ -118,6 +118,10 @@ ro.frp.pst=/dev/block/bootdevice/by-name/config
 persist.gps.qc_nlp_in_use=1
 ro.gps.agps_provider=1
 
+# IOP properties
+vendor.iop.enable_uxe=1
+vendor.perf.iop_v3.enable=true
+
 # ro.location properties below are used in conjunction
 # with NLP_MODE setting in /vendor/etc/izat.conf
 # either as the main network provider or as a fallback

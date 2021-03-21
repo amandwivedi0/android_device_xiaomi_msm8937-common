@@ -1,3 +1,6 @@
+# Charger
+/(vendor|system/vendor)/bin/charger            u:object_r:vendor_charger_exec:s0
+
 # FPC Fingerprint
 /data/fpc(/.*)?                                          u:object_r:fpc_data_file:s0
 /dev/socket/fpce                                         u:object_r:fpc_socket:s0

@@ -980,10 +980,10 @@ service profiler_daemon /system/bin/profiler_daemon
     group root
     disabled
 
-service charger /vendor/bin/charger
+service vendor.charger /vendor/bin/charger
     class charger
-    group system graphics
-    seclabel u:r:healthd:s0
+    group system graphics log
+    seclabel u:r:vendor_charger:s0
 
 service vendor.ssr_diag /system/vendor/bin/ssr_diag
     class late_start

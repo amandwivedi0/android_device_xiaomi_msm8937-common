@@ -380,6 +380,10 @@ vendor/lib64/vendor.qti.gnss@3.0.so
 vendor/lib64/vendor.qti.gnss@4.0-service.so
 vendor/lib64/vendor.qti.gnss@4.0.so
 
+# Graphics - from LA.UM.9.6.2.r1-03600-89xx.0
+system/lib/libsdm-disp-apis.so
+system/lib64/libsdm-disp-apis.so
+
 # Graphics firmware - from LA.UM.9.6.2.r1-03600-89xx.0
 vendor/firmware/a530_gpmu.fw2
 vendor/firmware/a530_pfp.fw
@@ -390,6 +394,10 @@ vendor/firmware/a530v2_seq.fw2
 vendor/firmware/a530v3_gpmu.fw2
 vendor/firmware/a530v3_seq.fw2
 vendor/firmware/a540_gpmu.fw2
+
+# Graphics (Postprocessing) - from LA.UM.9.6.2.r1-03600-89xx.0
+system/etc/permissions/com.qti.snapdragon.sdk.display.xml
+system/framework/com.qti.snapdragon.sdk.display.jar
 
 # Keystore - LA.UM.8.6.2.r1-08400-89xx.0
 vendor/lib/hw/keystore.msm8953.so:vendor/lib/hw/keystore.msm8937.so
@@ -408,6 +416,10 @@ vendor/lib/libsmwrapper.so
 vendor/lib64/hw/sound_trigger.primary.msm8937.so
 
 # Media - from LA.UM.9.6.2.r1-03600-89xx.0
+system_ext/lib/libmmosal.so
+system_ext/lib64/libmmosal.so
+system/lib/libFileMux.so
+system/lib/libOmxMux.so
 vendor/lib/libUBWC.so
 vendor/lib/libfastcrc.so
 vendor/lib/libstreamparser.so
@@ -417,6 +429,7 @@ vendor/lib64/libUBWC.so
 vendor/lib64/libfastcrc.so
 vendor/lib64/libstreamparser.so
 vendor/lib64/libvideoutils.so
+
 
 # Perf - from LA.UM.9.6.2.r1-03600-89xx.0
 vendor/lib/libqti-perfd-client.so
@@ -736,36 +749,38 @@ vendor/lib64/libtime_genoff.so
 vendor/bin/wcnss_service
 
 # WiFi Display - from LA.UM.9.6.2.r1-03600-89xx.0
-bin/wfdservice
-etc/init/wfdservice.rc
-etc/wfdconfig.xml
-etc/wfdconfigsink.xml
--framework/WfdCommon.jar
-lib/com.qualcomm.qti.wifidisplayhal@1.0.so
-lib/libaudioclient.so:lib/libwfdaudioclient.so
-lib/libmediautils.so:lib/libwfdmediautils.so
-lib/libwfdavenhancements.so
-lib/libwfdclient.so
-lib/libwfdcodecv4l2.so
-lib/libwfdcommonutils.so
-lib/libwfdconfigutils.so
-lib/libwfdmminterface.so
-lib/libwfdmmsink.so
-lib/libwfdmmsrc.so
-lib/libwfdnative.so
-lib/libwfdrtsp.so
-lib/libwfdservice.so
-lib/libwfdsm.so
-lib/libwfduibcinterface.so
-lib/libwfduibcsink.so
-lib/libwfduibcsinkinterface.so
-lib/libwfduibcsrc.so
-lib/libwfduibcsrcinterface.so
-lib64/libwfdclient.so
-lib64/libwfdnative.so
--priv-app/WfdService/WfdService.apk
+system/bin/wfdservice
+system/etc/init/wfdservice.rc
+system/etc/wfdconfig.xml
+system/etc/wfdconfigsink.xml
+-system/framework/WfdCommon.jar
+system/lib/com.qualcomm.qti.wifidisplayhal@1.0.so
+system/lib/libaudioclient.so:lib/libwfdaudioclient.so
+system/lib/libmediautils.so:lib/libwfdmediautils.so
+system/lib/libwfdavenhancements.so
+system/lib/libwfdclient.so
+system/lib/libwfdcodecv4l2.so
+system/lib/libwfdcommonutils.so
+system/lib/libwfdconfigutils.so
+system/lib/libwfddisplayconfig.so
+system/lib/libwfdmminterface.so
+system/lib/libwfdmmsink.so
+system/lib/libwfdmmsrc.so
+system/lib/libwfdnative.so
+system/lib/libwfdrtsp.so
+system/lib/libwfdservice.so
+system/lib/libwfdsm.so
+system/lib/libwfduibcinterface.so
+system/lib/libwfduibcsink.so
+system/lib/libwfduibcsinkinterface.so
+system/lib/libwfduibcsrc.so
+system/lib/libwfduibcsrcinterface.so
+system/lib64/libwfdclient.so
+system/lib64/libwfdnative.so
+-system/priv-app/WfdService/WfdService.apk
 vendor/bin/wifidisplayhalservice
 vendor/etc/init/com.qualcomm.qti.wifidisplayhal@1.0-service.rc
+vendor/lib/libstagefright_enc_common.so:system/lib/libstagefright_enc_common.so
 vendor/lib/com.qualcomm.qti.wifidisplayhal@1.0-halimpl.so
 vendor/lib/com.qualcomm.qti.wifidisplayhal@1.0.so
 vendor/lib/libwfdcommonutils_proprietary.so

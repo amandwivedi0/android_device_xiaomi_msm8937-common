@@ -416,10 +416,20 @@ vendor/lib/libsmwrapper.so
 vendor/lib64/hw/sound_trigger.primary.msm8937.so
 
 # Media - from LA.UM.9.6.2.r1-03600-89xx.0
+system_ext/lib/extractors/libmmparserextractor.so
 system_ext/lib/libmmosal.so
-system_ext/lib64/libmmosal.so
+system_ext/lib/libmmparser_lite.so
+system_ext/lib64/libmmosal.so|
 system/lib/libFileMux.so
 system/lib/libOmxMux.so
+vendor/etc/seccomp_policy/mediacodec.policy
+vendor/etc/seccomp_policy/mediaextractor.policy
+vendor/lib/libAlacSwDec.so
+vendor/lib/libApeSwDec.so
+vendor/lib/libFlacSwDec.so
+vendor/lib/libMpeg4SwEncoder.so
+vendor/lib/libOmxSwVdec.so
+vendor/lib/libvpplibrary.so
 vendor/lib/libUBWC.so
 vendor/lib/libfastcrc.so
 vendor/lib/libstreamparser.so
@@ -429,7 +439,8 @@ vendor/lib64/libUBWC.so
 vendor/lib64/libfastcrc.so
 vendor/lib64/libstreamparser.so
 vendor/lib64/libvideoutils.so
-
+vendor/lib64/libswvdec.so
+vendor/lib64/libvpplibrary.so
 
 # Perf - from LA.UM.9.6.2.r1-03600-89xx.0
 vendor/lib/libqti-perfd-client.so
@@ -755,8 +766,8 @@ system/etc/wfdconfig.xml
 system/etc/wfdconfigsink.xml
 -system/framework/WfdCommon.jar
 system/lib/com.qualcomm.qti.wifidisplayhal@1.0.so
-system/lib/libaudioclient.so:lib/libwfdaudioclient.so
-system/lib/libmediautils.so:lib/libwfdmediautils.so
+system/lib/libaudioclient.so:system/lib/libwfdaudioclient.so
+system/lib/libmediautils.so:system/lib/libwfdmediautils.so
 system/lib/libwfdavenhancements.so
 system/lib/libwfdclient.so
 system/lib/libwfdcodecv4l2.so

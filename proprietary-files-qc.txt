@@ -257,6 +257,11 @@ vendor/bin/hvdcp_opti
 vendor/lib/com.qualcomm.qti.dpm.api@1.0.so
 vendor/lib64/com.qualcomm.qti.dpm.api@1.0.so
 
+# Dirac
+vendor/lib/soundfx/libdirac.so 
+vendor/lib/libDiracAPI_SHARED.so 
+vendor/etc/diracmobile.config
+
 # Secure MSM - from LA.UM.9.6.2.r1-03600-89xx.0
 system_ext/lib/vendor.qti.hardware.tui_comm@1.0.so
 system_ext/lib64/vendor.qti.hardware.tui_comm@1.0.so

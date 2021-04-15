@@ -415,7 +415,6 @@ vendor/lib64/libkeymasterprovision.so
 vendor/lib64/libkeymasterdeviceutils.so
 
 # Listen - from LA.UM.9.6.2.r1-03600-89xx.0
-vendor/lib/hw/sound_trigger.primary.msm8937.so|92e594bd2423aece12695be888c381044c5782c7
 vendor/lib/libadpcmdec.so|7a38d6b28b27cf663681ad077614a03164418f91
 vendor/lib/libsmwrapper.so|f0ee761c02c888e77d947bb87d162d9379bc1530
 vendor/lib64/hw/sound_trigger.primary.msm8937.so|4a59f147ea525cde149f88cab345d32426482123

@@ -257,6 +257,10 @@ vendor/bin/hvdcp_opti|e5034d57f899b0759e6c23443afe557f86ee3a09
 vendor/lib/com.qualcomm.qti.dpm.api@1.0.so|4f5054337612ea812d6253bbf05eff7527d6f99f
 vendor/lib64/com.qualcomm.qti.dpm.api@1.0.so|c5c893e86d38b8aa8cd277ccb8b011fb2f19995e
 
+# DRM - from Redmi/lmi/lmi:11/RKQ1.200826.002/20.10.19:user/release-keys
+vendor/lib64/libops.so|b2223e64db9d8f84262da7a8621013d3c63b6c98
+vendor/lib64/libspl.so|0fa8c0711f72fc8a914dce044cf8dddd79ee62e1
+
 # Dirac
 vendor/lib/soundfx/libdirac.so 
 vendor/lib/libDiracAPI_SHARED.so 

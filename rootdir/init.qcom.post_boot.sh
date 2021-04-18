@@ -2559,6 +2559,9 @@ case "$target" in
                      echo 1 > /sys/devices/system/cpu/cpu0/core_ctl/is_big_cluster
                      echo 4 > /sys/devices/system/cpu/cpu0/core_ctl/task_thres
 
+                     # Set minimum GPU power level (216)
+                     echo 5 > /sys/class/kgsl/kgsl-3d0/default_pwrlevel
+
                      # Big cluster min frequency adjust settings
                      if [ -f /sys/module/big_cluster_min_freq_adjust/parameters/min_freq_cluster ]; then
                          echo "0-3" > /sys/module/big_cluster_min_freq_adjust/parameters/min_freq_cluster

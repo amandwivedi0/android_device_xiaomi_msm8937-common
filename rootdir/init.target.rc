@@ -334,3 +334,7 @@ on boot
     chown system system /sys/class/leds/blue/breath
     chown system system /sys/class/leds/blue/delay_on
     chown system system /sys/class/leds/blue/delay_off
+
+service vendor_flash_recovery /vendor/bin/install-recovery.sh
+    class main
+    disabled

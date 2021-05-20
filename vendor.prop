@@ -49,6 +49,10 @@ persist.vendor.bluetooth.modem_nv_support=true
 persist.vendor.bt.enable.splita2dp=false
 vendor.qcom.bluetooth.soc=smd
 
+# Blur
+ro.surface_flinger.supports_background_blur=1
+ro.sf.blurs_are_expensive=1
+
 # Camera
 vendor.camera.hal1.packagelist=com.skype.raider,com.google.android.talk
 persist.vendor.camera.display.umax=2560x1440
